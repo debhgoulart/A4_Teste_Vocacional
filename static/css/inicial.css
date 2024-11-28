@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    /* Gradiente roxo para azul */
+    color: rgb(90, 0, 128);
+    /* Texto em branco para contraste */
+    font-family: "Geist Mono", monospace
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Adapta-se a telas menores */
+    position: relative;
+}
+
+.text-content {
+    max-width: 50%;
+    /* Limita o tamanho do texto */
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    /* Aumenta o espaçamento entre título e texto */
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* Melhora a legibilidade */
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #6610f2;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4e0db0;
+    /* Cor mais escura no hover */
+}
+
+.image-content img {
+    max-width: 100%;
+    /* Torna a imagem responsiva */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+        /* Centraliza em telas menores */
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        text-align: center;
+    }
+
+    .btn-container {
+        position: static;
+        text-align: center;
+        /* Centraliza o botão em telas menores */
+        margin-top: 20px;
+    }
+}

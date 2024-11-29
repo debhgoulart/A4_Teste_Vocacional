@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste Vocacional</title>
   <link rel="stylesheet" href="../static/css/questionario.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="formbold-main-wrapper">
@@ -16,32 +13,51 @@
       <form action="/resultado" method="POST">
         {% for idx, (pergunta, opcoes) in perguntas %}
         <div class="formbold-mb-5">
-          <label for="pergunta_{{ idx }}" class="formbold-form-label">
-            {{ pergunta }}
-          </label>
-          <div class="formbold-radio-flex">
-            {% for opcao, valor in opcoes %}
-            <div class="formbold-radio-group">
-              <label class="formbold-radio-label">
-                {{ opcao }} ({{ valor }})
-              </label>
+            <label for="pergunta_{{ idx }}" class="formbold-form-label">
+                {{ pergunta }}
+            </label>
+            <div class="formbold-radio-flex">
+                {% for opcao, valor in opcoes %}
+                <div class="formbold-radio-group">
+                    <label class="formbold-radio-label">
+                        {{ opcao }} ({{ valor }})
+                    </label>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-          </div>
-          <!-- Campo para digitar a resposta -->
-          <input 
-            class="formbold-input" 
-            type="text" 
-            name="pergunta_{{ idx }}" 
-            placeholder="Digite 1, 2 ou 3"
-            pattern="[1-3]" 
-            required
-          />
+    
+            <input 
+                class="formbold-input" 
+                type="text" 
+                name="pergunta_{{ idx }}" 
+                placeholder="Resposta:" 
+                pattern="[1-3]" 
+                required 
+            />
         </div>
         {% endfor %}
         <button class="formbold-btn" type="submit">Enviar</button>
-      </form>
+    </form>      
     </div>
   </div>
+
+  <script>
+    function calcularRespostas() {
+      const form = document.getElementById('questionarioForm');
+      const respostas = Array.from(form.elements)
+        .filter(element => element.tagName === 'INPUT' && element.type === 'text')
+        .map(input => parseInt(input.value, 10));
+
+      if (respostas.some(isNaN)) {
+        alert('Por favor, preencha todas as respostas com números válidos (1, 2 ou 3).');
+        return;
+      }
+
+      const resultado = respostas.reduce((soma, atual) => soma + atual, 0);
+
+      //redireciona
+      window.location.href = `/resultado?total=${resultado}`;
+    }
+  </script>
 </body>
 </html>

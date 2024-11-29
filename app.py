@@ -3,6 +3,36 @@ from pyswip import Prolog
 
 app = Flask(__name__)
 
+# Inicializa o Prolog
+prolog = Prolog()
+
+# Carrega a base de conhecimento no Prolog
+prolog.assertz("carreira(administracao, 10, 30)")
+prolog.assertz("carreira(artes_cenicas, 31, 50)")
+prolog.assertz("carreira(arquitetura, 51, 70)")
+prolog.assertz("carreira(ciencia_da_computacao, 71, 90)")
+prolog.assertz("carreira(ciencias_biologicas, 91, 110)")
+prolog.assertz("carreira(design_grafico, 111, 130)")
+prolog.assertz("carreira(direito, 131, 150)")
+prolog.assertz("carreira(economia, 151, 170)")
+prolog.assertz("carreira(educacao_fisica, 171, 180)")
+prolog.assertz("carreira(engenharia, 181, 200)")
+prolog.assertz("carreira(jornalismo, 201, 220)")
+prolog.assertz("carreira(letras, 221, 240)")
+prolog.assertz("carreira(marketing, 241, 260)")
+prolog.assertz("carreira(medicina, 261, 280)")
+prolog.assertz("carreira(medicina_veterinaria, 281, 300)")
+prolog.assertz("carreira(psicologia, 301, 320)")
+prolog.assertz("carreira(relacoes_internacionais, 321, 340)")
+
+# Regra para encontrar a carreira
+prolog.assertz("""
+encontrar_carreira(Pontos, Carreira) :-
+    carreira(Carreira, Min, Max),
+    Pontos >= Min,
+    Pontos =< Max.
+""")
+
 #Perguntas
 perguntas = [
     ("Qual é o seu nível de interesse em entender e apoiar as necessidades emocionais dos outros?", [
@@ -114,19 +144,40 @@ perguntas = [
 
 
 @app.route('/')
-def index():
+def inicial():
+    return render_template('inicial.html')
+
+@app.route('/questionario')
+def questionario():
     return render_template('questionario.html', perguntas=enumerate(perguntas))
 
-#envia requisição
 @app.route('/resultado', methods=['POST'])
 def resultado():
     pontuacao_total = 0
+    respostas_invalidas = []
+
+    # Processa as respostas do formulário
     for i in range(len(perguntas)):
         resposta = request.form.get(f'pergunta_{i}')
-        if resposta:
+        if resposta and resposta.isdigit() and int(resposta) in [1, 2, 3]:
             pontuacao_total += int(resposta)
-    
-    return f'Pontuação total: {pontuacao_total}'
+        else:
+            respostas_invalidas.append(i + 1)
+
+    # Caso haja respostas inválidas, mostra uma mensagem de erro
+    if respostas_invalidas:
+        return f"As perguntas {', '.join(map(str, respostas_invalidas))} contêm respostas inválidas. Por favor, corrija."
+
+    # Consulta o Prolog para encontrar a carreira
+    resultado_prolog = list(prolog.query(f"encontrar_carreira({pontuacao_total}, Carreira)"))
+    if resultado_prolog:
+        carreira = resultado_prolog[0]['Carreira']
+        mensagem = f"Com base na sua pontuação ({pontuacao_total}), a carreira sugerida é: {carreira.replace('_', ' ').capitalize()}."
+    else:
+        mensagem = f"Não foi possível determinar uma carreira com base na pontuação total: {pontuacao_total}."
+
+    # Renderiza a página de resultado
+    return render_template('resultado.html', mensagem=mensagem)
 
 if __name__ == '__main__':
     app.run(debug=True)

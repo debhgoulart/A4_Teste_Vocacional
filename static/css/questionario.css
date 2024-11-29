@@ -168,6 +168,41 @@ input[type="text"] {
     transform: translate(-50%, -50%);
 }
 
+footer {
+    background-color: #6a64f1;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-footer {
+    color: #fff;
+    margin-top: 30px;
+}
+
+nav {
+    background-color: #6a64f1;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .formbold-input-flex {
         flex-direction: column;

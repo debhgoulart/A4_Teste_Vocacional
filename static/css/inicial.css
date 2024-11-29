@@ -1,69 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geist Mono', monospace;
+}
+
 body {
-    background: linear-gradient(135deg, #ffffff, #ffffff);
-    /* Gradiente roxo para azul */
-    color: rgb(90, 0, 128);
-    /* Texto em branco para contraste */
-    font-family: "Geist Mono", monospace
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* Adapta-se a telas menores */
-    position: relative;
+    gap: 30px;
 }
 
 .text-content {
     max-width: 50%;
-    /* Limita o tamanho do texto */
+    padding-right: 20px;
 }
 
 .text-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    /* Aumenta o espaçamento entre título e texto */
+    color: #6a64f1;
+    font-weight: 700;
 }
 
 .text-content p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    /* Melhora a legibilidade */
+    line-height: 1.8;
+    color: #333;
 }
 
 .btn-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 30px;
 }
 
 .btn-primary {
     padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #6610f2;
+    background-color: #6a64f1;
     border: none;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
     background-color: #4e0db0;
-    /* Cor mais escura no hover */
 }
 
 .image-content img {
     max-width: 100%;
-    /* Torna a imagem responsiva */
-    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #6a64f1;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-footer {
+    color: #fff;
+    margin-top: 30px;
+}
+
+nav {
+    background-color: #6a64f1;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
     .text-content {
         max-width: 100%;
         text-align: center;
-        /* Centraliza em telas menores */
         margin-bottom: 20px;
     }
 
@@ -72,9 +112,7 @@ body {
     }
 
     .btn-container {
-        position: static;
         text-align: center;
-        /* Centraliza o botão em telas menores */
         margin-top: 20px;
     }
 }

@@ -20,5 +20,5 @@ carreira(relacoes_internacionais, 321, 340).
 % Regra para encontrar a carreira com base nos pontos
 encontrar_carreira(Pontos, Carreira) :-
     carreira(Carreira, Min, Max),
-    Pontos >= Min,
+    Pontos >= Min, 
     Pontos =< Max.

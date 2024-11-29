@@ -3,13 +3,12 @@ from pyswip import Prolog
 
 app = Flask(__name__)
 
-# Lista completa de perguntas e opções
-
+#Perguntas
 perguntas = [
     ("Qual é o seu nível de interesse em entender e apoiar as necessidades emocionais dos outros?", [
-        ("Costumo focar mais nas minhas próprias necessidades.", 1),
-        ("Procuro entender os outros quando necessário, mas sem priorizar.", 2),
-        ("Tenho grande interesse em compreender e apoiar os outros.", 3),
+        ("1 - Costumo focar mais nas minhas próprias necessidades.", 1),
+        ("2 - Procuro entender os outros quando necessário, mas sem priorizar.", 2),
+        ("3 - Tenho grande interesse em compreender e apoiar os outros.", 3),
     ]),
     ("Como você se sente em relação à competição com outras pessoas no ambiente de trabalho?", [
         ("Prefiro trabalhar sem a pressão de competir.", 1),
@@ -116,8 +115,9 @@ perguntas = [
 
 @app.route('/')
 def index():
-    return render_template('index.html', perguntas=enumerate(perguntas))
+    return render_template('questionario.html', perguntas=enumerate(perguntas))
 
+#envia requisição
 @app.route('/resultado', methods=['POST'])
 def resultado():
     pontuacao_total = 0
@@ -126,7 +126,6 @@ def resultado():
         if resposta:
             pontuacao_total += int(resposta)
     
-    # Lógica para determinar a carreira com base na pontuação...
     return f'Pontuação total: {pontuacao_total}'
 
 if __name__ == '__main__':

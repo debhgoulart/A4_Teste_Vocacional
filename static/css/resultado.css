@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    background: #bda5ec;
+    background: #6a64f1;
     padding: 3rem 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,17 +34,22 @@ body {
     width: 100%;
     text-align: center;
     min-height: 500px;
+    margin-bottom: 110px;
 }
 
 h1 {
     font-size: 2rem;
-    color: #f8f8f8;
+    color: #422779;
+}
+
+h3 {
+    color: #422779;
 }
 
 p {
     font-size: 1.2rem;
     margin: 1rem 0;
-    color: #34495e;
+    color: #ffffff;
 }
 
 a {
@@ -53,10 +58,9 @@ a {
     text-decoration: none;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #7251B5;
+    background-color: #a887eb;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    border: 2px solid #7251B5;
     transition: background-color 0.3s, color 0.3s;
 }
 

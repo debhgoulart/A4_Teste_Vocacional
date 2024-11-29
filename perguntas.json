@@ -3,169 +3,169 @@
     {
       "texto": "Qual é o seu nível de interesse em entender e apoiar as necessidades emocionais dos outros?",
       "opcoes": [
-        {"texto": "Costumo focar mais nas minhas próprias necessidades.", "pontuacao": 1},
-        {"texto": "Procuro entender os outros quando necessário, mas sem priorizar.", "pontuacao": 8},
-        {"texto": "Tenho grande interesse em compreender e apoiar os outros.", "pontuacao": 16}
+        {"texto": "1 - Costumo focar mais nas minhas próprias necessidades.", "pontuacao": 1},
+        {"texto": "2 - Procuro entender os outros quando necessário, mas sem priorizar.", "pontuacao": 8},
+        {"texto": "3 - Tenho grande interesse em compreender e apoiar os outros.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você se sente em relação à competição com outras pessoas no ambiente de trabalho?",
       "opcoes": [
-        {"texto": "Prefiro trabalhar sem a pressão de competir.", "pontuacao": 1},
-        {"texto": "Competir é algo que faço quando a situação exige.", "pontuacao": 8},
-        {"texto": "Adoro competir e sempre procuro superar os outros.", "pontuacao": 16}
+        {"texto": "1 - Prefiro trabalhar sem a pressão de competir.", "pontuacao": 1},
+        {"texto": "2 - Competir é algo que faço quando a situação exige.", "pontuacao": 8},
+        {"texto": "3 - Adoro competir e sempre procuro superar os outros.", "pontuacao": 16}
       ]
     },
     {
       "texto": "O quanto você prefere ter liberdade para decidir como executar suas tarefas?",
       "opcoes": [
-        {"texto": "Prefiro seguir orientações claras.", "pontuacao": 1},
-        {"texto": "Gosto de autonomia em algumas áreas.", "pontuacao": 8},
-        {"texto": "Prefiro ter total autonomia.", "pontuacao": 16}
+        {"texto": "1 - Prefiro seguir orientações claras.", "pontuacao": 1},
+        {"texto": "2 - Gosto de autonomia em algumas áreas.", "pontuacao": 8},
+        {"texto": "3 - Prefiro ter total autonomia.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você se sente em relação ao trabalho em equipe e à colaboração?",
       "opcoes": [
-        {"texto": "Prefiro trabalhar de forma independente, sem muita colaboração.", "pontuacao": 1},
-        {"texto": "Gosto de colaborar, mas também valorizo minha autonomia.", "pontuacao": 8},
-        {"texto": "Considero a colaboração essencial para atingir os melhores resultados.", "pontuacao": 16}
+        {"texto": "1 - Prefiro trabalhar de forma independente, sem muita colaboração.", "pontuacao": 1},
+        {"texto": "2 - Gosto de colaborar, mas também valorizo minha autonomia.", "pontuacao": 8},
+        {"texto": "3 - Considero a colaboração essencial para atingir os melhores resultados.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Quão confortável você se sente em situações onde pode focar em atividades individuais?",
       "opcoes": [
-        {"texto": "Prefiro ambientes com mais interação social.", "pontuacao": 1},
-        {"texto": "Consigo trabalhar sozinho, mas gosto de momentos de interação.", "pontuacao": 8},
-        {"texto": "Sinto-me mais confortável em atividades realizadas individualmente.", "pontuacao": 16}
+        {"texto": "1 - Prefiro ambientes com mais interação social.", "pontuacao": 1},
+        {"texto": "2 - Consigo trabalhar sozinho, mas gosto de momentos de interação.", "pontuacao": 8},
+        {"texto": "3 - Sinto-me mais confortável em atividades realizadas individualmente.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Com que frequência você prefere atividades que envolvem interação constante com outras pessoas?",
       "opcoes": [
-        {"texto": "Prefiro atividades mais solitárias, com pouca interação social.", "pontuacao": 1},
-        {"texto": "Gosto de um equilíbrio entre interação social e atividades solitárias.", "pontuacao": 8},
-        {"texto": "Prefiro atividades com muita interação e contato social.", "pontuacao": 16}
+        {"texto": "1 - Prefiro atividades mais solitárias, com pouca interação social.", "pontuacao": 1},
+        {"texto": "2 - Gosto de um equilíbrio entre interação social e atividades solitárias.", "pontuacao": 8},
+        {"texto": "3 - Prefiro atividades com muita interação e contato social.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você lida com tarefas que exigem precisão e cumprimento de prazos?",
       "opcoes": [
-        {"texto": "Prefiro fazer as tarefas no meu ritmo, mesmo que tome mais tempo.", "pontuacao": 1},
-        {"texto": "Faço o possível para ser eficiente, mas sem comprometer a qualidade.", "pontuacao": 8},
-        {"texto": "Priorizo cumprir as tarefas com rapidez e eficácia acima de tudo.", "pontuacao": 16}
+        {"texto": "1 - Prefiro fazer as tarefas no meu ritmo, mesmo que tome mais tempo.", "pontuacao": 1},
+        {"texto": "2 - Faço o possível para ser eficiente, mas sem comprometer a qualidade.", "pontuacao": 8},
+        {"texto": "3 - Priorizo cumprir as tarefas com rapidez e eficácia acima de tudo.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Quando enfrenta um problema, qual é o seu estilo para encontrar soluções?",
       "opcoes": [
-        {"texto": "Prefiro seguir métodos testados e conhecidos.", "pontuacao": 1},
-        {"texto": "Busco novas ideias, mas também considero métodos tradicionais.", "pontuacao": 8},
-        {"texto": "Gosto de experimentar soluções inovadoras e criativas.", "pontuacao": 16}
+        {"texto": "1 - Prefiro seguir métodos testados e conhecidos.", "pontuacao": 1},
+        {"texto": "2 - Busco novas ideias, mas também considero métodos tradicionais.", "pontuacao": 8},
+        {"texto": "3 - Gosto de experimentar soluções inovadoras e criativas.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Qual é sua prioridade ao definir metas para um projeto?",
       "opcoes": [
-        {"texto": "Dou mais valor a metas que tragam satisfação e realização pessoal.", "pontuacao": 1},
-        {"texto": "Considero o impacto financeiro, mas busco equilíbrio com outros valores.", "pontuacao": 8},
-        {"texto": "Minhas prioridades são maximizar os ganhos e reduzir custos.", "pontuacao": 16}
+        {"texto": "1 - Dou mais valor a metas que tragam satisfação e realização pessoal.", "pontuacao": 1},
+        {"texto": "2 - Considero o impacto financeiro, mas busco equilíbrio com outros valores.", "pontuacao": 8},
+        {"texto": "3 - Minhas prioridades são maximizar os ganhos e reduzir custos.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você vê o impacto de suas ações no bem-estar dos outros?",
       "opcoes": [
-        {"texto": "Me concentro mais nos meus objetivos e no que é necessário para alcançá-los.", "pontuacao": 1},
-        {"texto": "Procuro equilibrar meus objetivos com ações que tragam benefício aos outros.", "pontuacao": 8},
-        {"texto": "Acredito que minhas ações devem sempre considerar o impacto positivo nas pessoas.", "pontuacao": 16}
+        {"texto": "1 - Me concentro mais nos meus objetivos e no que é necessário para alcançá-los.", "pontuacao": 1},
+        {"texto": "2 - Procuro equilibrar meus objetivos com ações que tragam benefício aos outros.", "pontuacao": 8},
+        {"texto": "3 - Acredito que minhas ações devem sempre considerar o impacto positivo nas pessoas.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Quando você toma decisões, como lida com o novo e o desconhecido?",
       "opcoes": [
-        {"texto": "Prefiro manter métodos e práticas já conhecidas.", "pontuacao": 1},
-        {"texto": "Gosto de evoluir aos poucos, testando novas opções.", "pontuacao": 8},
-        {"texto": "Estou aberto a experimentar e explorar novas ideias e práticas.", "pontuacao": 16}
+        {"texto": "1 - Prefiro manter métodos e práticas já conhecidas.", "pontuacao": 1},
+        {"texto": "2 - Gosto de evoluir aos poucos, testando novas opções.", "pontuacao": 8},
+        {"texto": "3 - Estou aberto a experimentar e explorar novas ideias e práticas.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Com que frequência você busca criar novas formas de resolver problemas?",
       "opcoes": [
-        {"texto": "Costumo me manter dentro das práticas já estabelecidas.", "pontuacao": 1},
-        {"texto": "Gosto de inovar, mas também considero métodos conhecidos.", "pontuacao": 8},
-        {"texto": "Sempre busco novas abordagens e soluções criativas para problemas.", "pontuacao": 16}
+        {"texto": "1 - Costumo me manter dentro das práticas já estabelecidas.", "pontuacao": 1},
+        {"texto": "2 - Gosto de inovar, mas também considero métodos conhecidos.", "pontuacao": 8},
+        {"texto": "3 - Sempre busco novas abordagens e soluções criativas para problemas.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você se sente em relação a ambientes que exigem constantes mudanças?",
       "opcoes": [
-        {"texto": "Prefiro ambientes estáveis e com poucas mudanças.", "pontuacao": 1},
-        {"texto": "Aprecio um equilíbrio entre estabilidade e mudanças ocasionais.", "pontuacao": 8},
-        {"texto": "Me sinto confortável em ambientes que exigem constante adaptação e mudanças.", "pontuacao": 16}
+        {"texto": "1 - Prefiro ambientes estáveis e com poucas mudanças.", "pontuacao": 1},
+        {"texto": "2 - Aprecio um equilíbrio entre estabilidade e mudanças ocasionais.", "pontuacao": 8},
+        {"texto": "3 - Me sinto confortável em ambientes que exigem constante adaptação e mudanças.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Qual é sua disposição para mudar seus planos ou rotinas quando surgem imprevistos?",
       "opcoes": [
-        {"texto": "Prefiro seguir meus planos e evitar mudanças.", "pontuacao": 1},
-        {"texto": "Consigo ajustar meus planos quando necessário, mas não gosto de mudanças frequentes.", "pontuacao": 8},
-        {"texto": "Adoro a flexibilidade de mudar planos e rotinas sempre que necessário.", "pontuacao": 16}
+        {"texto": "1 - Prefiro seguir meus planos e evitar mudanças.", "pontuacao": 1},
+        {"texto": "2 - Consigo ajustar meus planos quando necessário, mas não gosto de mudanças frequentes.", "pontuacao": 8},
+        {"texto": "3 - Adoro a flexibilidade de mudar planos e rotinas sempre que necessário.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você se sente em relação ao trabalho com cálculos e questões técnicas?",
       "opcoes": [
-        {"texto": "Prefiro evitar situações que envolvem cálculos ou problemas técnicos.", "pontuacao": 1},
-        {"texto": "Consigo lidar com cálculos e questões técnicas, mas não sou tão entusiasta.", "pontuacao": 8},
-        {"texto": "Gosto muito de trabalhar com cálculos e questões técnicas, sempre me aprofundando nas soluções.", "pontuacao": 16}
+        {"texto": "1 - Prefiro evitar situações que envolvem cálculos ou problemas técnicos.", "pontuacao": 1},
+        {"texto": "2 - Consigo lidar com cálculos e questões técnicas, mas não sou tão entusiasta.", "pontuacao": 8},
+        {"texto": "3 - Gosto muito de trabalhar com cálculos e questões técnicas, sempre me aprofundando nas soluções.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Quão confortável você se sente com temas e atividades ligadas à sociedade e à cultura?",
       "opcoes": [
-        {"texto": "Não tenho muito interesse por questões sociais ou comportamentais.", "pontuacao": 1},
-        {"texto": "Até gosto, mas não é o que mais me motiva.", "pontuacao": 8},
-        {"texto": "Sou muito interessado em entender o comportamento humano e as interações sociais.", "pontuacao": 16}
+        {"texto": "1 - Não tenho muito interesse por questões sociais ou comportamentais.", "pontuacao": 1},
+        {"texto": "2 - Até gosto, mas não é o que mais me motiva.", "pontuacao": 8},
+        {"texto": "3 - Sou muito interessado em entender o comportamento humano e as interações sociais.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Qual é o seu nível de interesse por áreas que estudam os organismos vivos, como medicina, biologia ou ecologia?",
       "opcoes": [
-        {"texto": "Não tenho interesse em estudar organismos vivos e os processos biológicos que os envolvem.", "pontuacao": 1},
-        {"texto": "Tenho um interesse por biologia e ciências da vida, mas não é uma área que me motiva a me aprofundar.", "pontuacao": 8},
-        {"texto": "Tenho um grande interesse por biologia e ciências naturais.", "pontuacao": 16}
+        {"texto": "1 - Não tenho interesse em estudar organismos vivos e os processos biológicos que os envolvem.", "pontuacao": 1},
+        {"texto": "2 - Tenho um interesse por biologia e ciências da vida, mas não é uma área que me motiva a me aprofundar.", "pontuacao": 8},
+        {"texto": "3 - Tenho um grande interesse por biologia e ciências naturais.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você costuma abordar a resolução de problemas complexos?",
       "opcoes": [
-        {"texto": "Prefiro soluções simples, sem me aprofundar muito nos detalhes.", "pontuacao": 1},
-        {"texto": "Consigo lidar com problemas complexos, mas prefiro não me aprofundar em todos os detalhes.", "pontuacao": 8},
-        {"texto": "Adoro analisar problemas complexos e resolver quebra-cabeças, explorando todos os detalhes e soluções possíveis.", "pontuacao": 16}
+        {"texto": "1 - Prefiro soluções simples, sem me aprofundar muito nos detalhes.", "pontuacao": 1},
+        {"texto": "2 - Consigo lidar com problemas complexos, mas prefiro não me aprofundar em todos os detalhes.", "pontuacao": 8},
+        {"texto": "3 - Adoro analisar problemas complexos e resolver quebra-cabeças, explorando todos os detalhes e soluções possíveis.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Quando você enfrenta situações inesperadas ou mudanças rápidas, como você costuma reagir?",
       "opcoes": [
-        {"texto": "Costumo ficar hesitante e gosto de ter tempo para planejar antes de agir.", "pontuacao": 1},
-        {"texto": "Tento avaliar rapidamente as situações, mas ainda prefiro ponderar antes de tomar decisões.", "pontuacao": 8},
-        {"texto": "Reajo de forma rápida e impulsiva, adaptando-me facilmente às mudanças.", "pontuacao": 16}
+        {"texto": "1 - Costumo ficar hesitante e gosto de ter tempo para planejar antes de agir.", "pontuacao": 1},
+        {"texto": "2 - Tento avaliar rapidamente as situações, mas ainda prefiro ponderar antes de tomar decisões.", "pontuacao": 8},
+        {"texto": "3 - Reajo de forma rápida e impulsiva, adaptando-me facilmente às mudanças.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Qual é o seu nível de envolvimento com atividades e estudos mais acadêmicos e teóricos?",
       "opcoes": [
-        {"texto": "Prefiro evitar atividades acadêmicas ou estudos teóricos e me foco mais na prática.", "pontuacao": 1},
-        {"texto": "Eu me envolvo com atividades acadêmicas de forma equilibrada, mas não é o meu foco principal.", "pontuacao": 8},
-        {"texto": "Tenho grande interesse em atividades acadêmicas e teóricas, especialmente aquelas que aprofundam o conhecimento.", "pontuacao": 16}
+        {"texto": "1 - Prefiro evitar atividades acadêmicas ou estudos teóricos e me foco mais na prática.", "pontuacao": 1},
+        {"texto": "2 - Eu me envolvo com atividades acadêmicas de forma equilibrada, mas não é o meu foco principal.", "pontuacao": 8},
+        {"texto": "3 - Tenho grande interesse em atividades acadêmicas e teóricas, especialmente aquelas que aprofundam o conhecimento.", "pontuacao": 16}
       ]
     },
     {
       "texto": "Como você costuma tomar decisões em situações desafiadoras ou complexas?",
       "opcoes": [
-        {"texto": "Prefiro agir com base em ideias ou teorias, mesmo que não tenha certeza da aplicação prática.", "pontuacao": 1},
-        {"texto": "Tento equilibrar teorias e práticas, mas prefiro uma solução mais prática e direta.", "pontuacao": 8},
-        {"texto": "Busco sempre soluções práticas e eficazes, focando em resultados tangíveis.", "pontuacao": 16}
+        {"texto": "1 - Prefiro agir com base em ideias ou teorias, mesmo que não tenha certeza da aplicação prática.", "pontuacao": 1},
+        {"texto": "2 - Tento equilibrar teorias e práticas, mas prefiro uma solução mais prática e direta.", "pontuacao": 8},
+        {"texto": "3 - Busco sempre soluções práticas e eficazes, focando em resultados tangíveis.", "pontuacao": 16}
       ]
     }
   ]

@@ -170,7 +170,7 @@ input[type="text"] {
 
 footer {
     background-color: #6a64f1;
-    height: 120px;
+    height: 80px;
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -201,6 +201,10 @@ nav {
     color: #fff;
     justify-content: center;
     align-items: center;
+}
+
+form {
+    margin:30px;
 }
 
 @media (max-width: 768px) {

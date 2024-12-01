@@ -72,7 +72,8 @@ def resultado():
     for i in range(len(perguntas["perguntas"])):
         resposta = request.form.get(f'pergunta_{i}')
         if resposta and resposta.isdigit() and int(resposta) in [1, 2, 3]:
-            pontuacao_total += int(resposta)
+            valor_convertido = {1: 1, 2: 8, 3: 16}.get(int(resposta), 0)
+            pontuacao_total += valor_convertido
         else:
             respostas_invalidas.append(i + 1)
 
